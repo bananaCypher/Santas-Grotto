@@ -1,0 +1,15 @@
+<% for present in @presents do %>
+  <div class="present">
+    <img src='/Present.png'>
+    <div class='label'>
+      <span>To <%= present.recipient %></span>
+      <span>Merry Christmas!</span>
+    </div>
+    <p>Contents: <%= present.contents %></p>
+    <img src="<%= present.image %>">
+  </div>
+  <div class='buttons'>
+    <%= link_to('Edit present', edit_present_path(present)) %>
+    <%= button_to("Destroy present", present_path(present), method: :delete) %>
+  </div>
+<% end %>

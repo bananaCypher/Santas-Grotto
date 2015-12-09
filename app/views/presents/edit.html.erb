@@ -1,0 +1,12 @@
+<%= form_for @present do |f| %>
+  <%= f.label :recipient %>
+  <%= f.text_field :recipient %>
+  <br>  
+  <%= f.label :contents %>
+  <%= f.text_field :contents %>
+  <br>  
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+  <br>
+  <%= f.submit 'Update present' %>
+<% end %>

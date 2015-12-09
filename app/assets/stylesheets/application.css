@@ -1,0 +1,120 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html, body {
+  margin: 0 0;
+  font-family: helvetica;
+  color: rgba(0, 0, 0, 0.8)
+ }
+ a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+ }
+ a:visited {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+ }
+ a:hover {
+  text-decoration: underline;
+ }
+
+
+div.header{
+  width: 100%;
+  height: 400px;
+  background-image: url(/HeaderImage.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+.header h1{
+  color: rgba(255,246,0,0.7);
+  margin: auto auto;
+}
+
+
+
+nav {
+  padding: 0;
+  margin: 0;
+}
+nav img {
+  width: 150px;
+  position: relative;
+  top: -75px;
+}
+nav img:nth-of-type(2) {
+  left: -100px;
+}
+nav a {
+  position: relative;
+  top: -250px;
+  left: -133px;
+  width: 82px;
+  word-wrap: break-word;
+  display: inline-block;
+  text-align: center;
+}
+nav a:nth-of-type(2) {
+  left: -233px;
+}
+
+
+div.present{
+  margin: 10px 10px;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+}
+.present img{
+  height: 100%;
+}
+.present p {
+  flex: 1.5 0;
+  padding: 10px;
+}
+div.label {
+  padding: 10px;
+  flex: 1.5 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(255, 246, 180);
+  font-family: SignPainter;
+  font-size: 1.2em;
+}
+
+div.buttons {
+  display: inline-block;
+  margin: 0 10px;
+}
+.buttons * {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.buttons input[type=submit] {
+  background-color: transparent;
+  border: 0px;
+  font-size: 1em;
+  font-style: helvetica;
+}
+.buttons input[type=submit]:hover {
+  background-color: transparent;
+  border: 0px;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.8); 
+  text-decoration: underline;
+}
